@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Lightbulb, Palette, Cog, Rocket } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const workflowSteps = [
   {

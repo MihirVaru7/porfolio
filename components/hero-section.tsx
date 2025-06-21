@@ -3,7 +3,7 @@
 import { useEffect, useRef, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import ParticleBackground from "@/components/particle-background";
 

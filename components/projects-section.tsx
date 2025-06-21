@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { ExternalLink, Play } from "lucide-react";
 import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const projects = [
   // {
