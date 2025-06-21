@@ -91,8 +91,9 @@ export default function Portfolio() {
           <ContactSection />
         </section>
       </main>
-
+        <div className="relative z-20">
       <Footer />
+      </div>
     </div>
   );
 }
