@@ -130,6 +130,7 @@ export default function Footer() {
           </motion.div>
 
           {/* Services */}
+          {/* Services */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -148,13 +149,13 @@ export default function Footer() {
                     href={service.href}
                     className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
                   >
-
                     {service.name}
                   </Link>
                 </motion.li>
               ))}
             </ul>
           </motion.div>
+
 
           {/* Social Links */}
           <motion.div
