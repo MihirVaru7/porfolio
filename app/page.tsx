@@ -43,21 +43,6 @@ export default function Portfolio() {
 
   useEffect(() => {
     // Smooth scrolling
-    const initLenis = async () => {
-      try {
-        const { default: Lenis } = await import("@studio-freight/lenis");
-        const lenis = new Lenis();
-
-        const raf = (time: number) => {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
-        };
-
-        requestAnimationFrame(raf);
-      } catch (error) {
-        console.log("Lenis not available, using default scrolling");
-      }
-    };
 
     initLenis();
   }, []);
