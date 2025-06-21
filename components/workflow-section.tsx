@@ -155,7 +155,7 @@ export default function WorkflowSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-12"
         >
-          <Link to="#contact">
+          <Link href="#contact" passHref>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

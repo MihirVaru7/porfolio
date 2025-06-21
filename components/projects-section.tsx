@@ -328,7 +328,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-12"
         >
-          <Link to="/projects">
+          <Link href="/projects" passHref>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
