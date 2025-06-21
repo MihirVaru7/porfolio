@@ -41,12 +41,6 @@ export default function Portfolio() {
 
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  useEffect(() => {
-    // Smooth scrolling
-
-    initLenis();
-  }, []);
-
   return (
     <div
       ref={containerRef}
