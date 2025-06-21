@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { ExternalLink, Play } from "lucide-react";
 import ReactPlayer from "react-player/youtube";
 import Image from "next/image";
+import { Link } from "react-router-dom";
 
 const projects = [
   // {
@@ -327,6 +328,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-12"
         >
+          <Link to="/projects">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -334,6 +336,7 @@ export default function ProjectsSection() {
           >
             View All Projects
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

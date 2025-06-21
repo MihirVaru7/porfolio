@@ -99,7 +99,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-lg blur-xl" />
                 <Image
-                  src="/subh.jpg?height=300&width=400"
+                  src="/subh.JPG?height=300&width=400"
                   alt="Shubham Bhushan Kumkar"
                   width={400}
                   height={500}

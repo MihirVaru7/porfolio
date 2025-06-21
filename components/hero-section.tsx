@@ -3,6 +3,7 @@
 import { useEffect, useRef, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import dynamic from "next/dynamic";
 import ParticleBackground from "@/components/particle-background";
 
@@ -200,13 +201,16 @@ export default function HeroSection() {
           transition={{ delay: 2 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 0 25px #00ffff" }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full text-white font-semibold hover:shadow-lg transition-all"
-          >
-            View My Work
-          </motion.button>
+          <Link to="/projects">
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 0 25px #00ffff" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full text-white font-semibold hover:shadow-lg transition-all"
+            >
+              View My Work
+            </motion.button>
+          </Link>
+          <Link to="#contact"></Link>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -214,6 +218,7 @@ export default function HeroSection() {
           >
             Get In Touch
           </motion.button>
+          </Link>
         </motion.div>
       </div>
 

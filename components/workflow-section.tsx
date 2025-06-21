@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Lightbulb, Palette, Cog, Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const workflowSteps = [
   {
@@ -154,6 +155,7 @@ export default function WorkflowSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-12"
         >
+          <Link to="#contact">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -161,6 +163,7 @@ export default function WorkflowSection() {
           >
             Start Your Project
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
