@@ -118,14 +118,14 @@ export default function Footer() {
                   transition={{ duration: 0.4, delay: 0.05 * index }}
                 >
                   <Link
-                    href={service.href}
+                    href={link.href} // ✅ CORRECT VARIABLE
                     className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
                   >
-
                     {link.name}
                   </Link>
                 </motion.li>
               ))}
+
             </ul>
           </motion.div>
 
