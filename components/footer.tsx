@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Mail, Phone, MapPin, Heart } from "lucide-react";
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { Mail, Phone, MapPin, Heart } from "lucide-react"
 
 const footerLinks = {
   pages: [
@@ -20,18 +20,10 @@ const footerLinks = {
     { name: "Brand Promotional Videos", href: "#" },
   ],
   social: [
-    {
-      name: "Instagram",
-      href: "https://instagram.com/shubham_kumkar_",
-      external: true,
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/shubham-kumkar",
-      external: true,
-    },
+    { name: "Instagram", href: "https://instagram.com/shubham_kumkar_", external: true },
+    { name: "LinkedIn", href: "https://linkedin.com/in/shubham-kumkar", external: true },
   ],
-};
+}
 
 const contactInfo = [
   {
@@ -49,7 +41,7 @@ const contactInfo = [
     label: "Mumbai, Maharashtra, India",
     href: "https://maps.google.com/?q=Mumbai,India",
   },
-];
+]
 
 export default function Footer() {
   return (
@@ -68,26 +60,21 @@ export default function Footer() {
                 Shubham Bhushan Kumkar
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                19-year-old aspiring filmmaker specializing in video editing,
-                VFX, and 3D design. Currently pursuing formal education in
-                filmmaking.
+                19-year-old aspiring filmmaker specializing in video editing, VFX, and 3D design. Currently pursuing
+                formal education in filmmaking.
               </p>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-3">
               {contactInfo.map((info, index) => {
-                const Icon = info.icon;
+                const Icon = info.icon
                 return (
                   <motion.a
                     key={info.label}
                     href={info.href}
                     target={info.href.startsWith("http") ? "_blank" : undefined}
-                    rel={
-                      info.href.startsWith("http")
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
+                    rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.1 * index }}
@@ -97,7 +84,7 @@ export default function Footer() {
                     <Icon className="w-4 h-4 mr-3 text-cyan-400 group-hover:scale-110 transition-transform" />
                     <span className="text-sm">{info.label}</span>
                   </motion.a>
-                );
+                )
               })}
             </div>
           </motion.div>
@@ -118,18 +105,16 @@ export default function Footer() {
                   transition={{ duration: 0.4, delay: 0.05 * index }}
                 >
                   <Link
-                    href={link.href} // ✅ CORRECT VARIABLE
-                    className="text-gray-300 hover:text-red-500 transition-all"
+                    href={link.href}
+                    className="text-gray-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
                 </motion.li>
               ))}
-
             </ul>
           </motion.div>
 
-          {/* Services */}
           {/* Services */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -147,7 +132,7 @@ export default function Footer() {
                 >
                   <Link
                     href={service.href}
-                    className="text-gray-300 hover:text-red-500 transition-all"
+                    className="text-gray-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block"
                   >
                     {service.name}
                   </Link>
@@ -155,7 +140,6 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
-
 
           {/* Social Links */}
           <motion.div
@@ -206,9 +190,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="border-t border-cyan-500/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Shubham Bhushan Kumkar. All rights reserved.
-          </p>
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Shubham Bhushan Kumkar. All rights reserved.</p>
           <div className="flex items-center text-gray-400 text-sm">
             <span>Made with</span>
             <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
@@ -217,5 +199,5 @@ export default function Footer() {
         </motion.div>
       </div>
     </footer>
-  );
+  )
 }
