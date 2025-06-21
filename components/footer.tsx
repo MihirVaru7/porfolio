@@ -13,11 +13,11 @@ const footerLinks = {
     { name: "Contact", href: "/contact" },
   ],
   services: [
-    { name: "Video Editing & Post Production", href: "#" },
-    { name: "VFX & Compositing", href: "#" },
-    { name: "3D Modeling & Rendering", href: "#" },
-    { name: "YouTube Content Creation", href: "#" },
-    { name: "Brand Promotional Videos", href: "#" },
+    { name: "Video Editing & Post Production" },
+    { name: "VFX & Compositing"},
+    { name: "3D Modeling & Rendering" },
+    { name: "YouTube Content Creation" },
+    { name: "Brand Promotional Videos" },
   ],
   social: [
     { name: "Instagram", href: "https://instagram.com/shubham_kumkar_", external: true },
@@ -130,12 +130,7 @@ export default function Footer() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.05 * index }}
                 >
-                  <Link
-                    href={service.href}
-                    className="text-gray-300 hover:text-cyan-400 transition-colors hover:translate-x-1 inline-block"
-                  >
-                    {service.name}
-                  </Link>
+                  <span className="text-gray-300">{service.name}</span>
                 </motion.li>
               ))}
             </ul>
