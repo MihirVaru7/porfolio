@@ -118,7 +118,7 @@ export default function Footer() {
                   transition={{ duration: 0.4, delay: 0.05 * index }}
                 >
                   <Link
-                    href={link.href}
+                    href={service.href}
                     className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
                   >
 
@@ -145,7 +145,7 @@ export default function Footer() {
                   transition={{ duration: 0.4, delay: 0.05 * index }}
                 >
                   <Link
-                    href={link.href}
+                    href={service.href}
                     className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
                   >
 
