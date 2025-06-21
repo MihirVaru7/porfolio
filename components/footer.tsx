@@ -119,7 +119,7 @@ export default function Footer() {
                 >
                   <Link
                     href={link.href} // ✅ CORRECT VARIABLE
-                    className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
+                    className="text-gray-300 hover:text-red-500 transition-all"
                   >
                     {link.name}
                   </Link>
@@ -147,7 +147,7 @@ export default function Footer() {
                 >
                   <Link
                     href={service.href}
-                    className="text-gray-300 hover:text-cyan-400 transform transition-all hover:translate-x-1 inline-block"
+                    className="text-gray-300 hover:text-red-500 transition-all"
                   >
                     {service.name}
                   </Link>
